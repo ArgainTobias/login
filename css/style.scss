@@ -1,0 +1,93 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: lightblue;
+}
+
+.login{
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 10%;
+    border-radius: 10px;
+    padding: 2rem;
+    .login__crearCuenta, .login__iniciarSesion{
+        display: grid;
+        place-content: center;
+        background: rgb(184, 184, 184);
+        width: max-content;
+        margin: 0 auto;
+        padding: 4rem;
+        border: dashed 2px #000;
+        border-radius: 10px;
+        box-shadow: 0 0 10px 5px #000;
+        .login__crearCuenta-form, .login__iniciarSesion-form{
+            h3{
+                margin-bottom: 1rem;
+            }
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            input{
+                margin: .5rem auto;
+                padding: 5px;
+                outline: none;
+                background: none;
+                border: none;
+                border-bottom: solid 1px black;
+                color: #000;
+            }
+            input::placeholder{
+                color: #000;
+            }
+            .login__crearCuenta-form-div, .login__iniciarSesion-form-div{
+                position: relative;
+                a{
+                    color: #000;
+                    position: absolute;
+                    left: 85%;
+                    top: 20%;
+                    i{
+                        font-size: 1rem;
+                    }
+                }
+            }
+            button{
+                margin: 1rem auto;
+                padding: 5px;
+                cursor: pointer;
+                background: lightblue;
+                border: solid 1px black;
+                border-radius: 5px;
+            }
+            button:hover{
+                background: rgb(119, 202, 230);
+            }
+
+        }
+        .green{
+            color: green;
+            margin-top: 1rem;
+            background: #000;
+            padding: 5px;
+            border-radius: 5px;
+        }
+        .red{
+            color: red;
+            margin-top: 1rem;
+            background: #000;
+            padding: 5px;
+            border-radius: 5px;
+        }
+        a{
+            color: blue;
+        }
+    }
+    .login__crearCuenta{
+        display: none;
+    }
+}
